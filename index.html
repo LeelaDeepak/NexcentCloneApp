@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nextcent-Mockup</title>
+  <link rel="stylesheet" href="web.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <!-- NavBar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <img src="images/Logo.svg" alt="Logo" class="cmpnylogo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-auto p-auto navbaritems">
+                    <li class="nav-item ps-4"><a class="nav-link" href="#" id="home">Home</a></li>
+                    <li class="nav-item ps-4"><a class="nav-link" href="#" id="services">Services</a></li>
+                    <li class="nav-item ps-4"><a class="nav-link" href="#" id="features">Feature <img src="images/downarrow.png" class="down-arrow" id="arrow-rotate"></img></a>
+                        <ul class="list-unstyled feature-items">
+                          <li class="nav-item p-2">Demo1</li>
+                          <li class="nav-item p-2">Demo2</li>
+                          <li class="nav-item p-2">Demo3</li>
+                          <li class="nav-item p-2">Demo4</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ps-4"><a class="nav-link" href="#" id="product">Product</a></li>
+                    <li class="nav-item ps-4"><a class="nav-link" href="#" id="testimonial">Testimonial</a></li>
+                    <li class="nav-item ps-4"><a class="nav-link" href="#" id="faq">FAQ</a></li>
+                </ul>
+                <div class="navbar-nav me-3 d-flex flex-row">
+                    <button class="btn me-3 btn-outline loginstyle" type="button">Login</button>
+                    <button class="btn btn-success ps-3 pe-3 signupstyle" type="button" id="signup" onclick="popupsignup()">Sign Up</button>
+                  </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+  <!-- WholePage -->
+  <main class="d-grid gap-2">
+    <!-- Carousel-Section  -->
+    <section class="banner custsection">
+      <div class="container">
+        <div id="carouselIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active activecirclebtn"></button>
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" class="inactivecirclebtn"></button>
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" class="inactivecirclebtn"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row mt-5">
+                <div class="col-sm-12 col-md-6 p-5 datapart">
+                  <h1 class="fw-bold">Lessons and insights</h1>
+                  <h1 class="meetallcust">from 8 years</h1>
+                  <p class="firstbody">Where to grow your business as a photographer: site or social media?</p>
+                  <button type="button" class="btn btn-primary btncolor px-4 py-2 mt-3">Register</button>
+                </div>
+                <div class="col-sm-12 col-md-6 p-5">
+                  <img src="images/banner-img1.svg" alt="bannerimg" class="carouselimg">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row mt-5">
+                <div class="col-sm-12 col-md-6 p-5 datapart">
+                  <h1 class="fw-bold">Lessons and insights</h1>
+                  <h1 class="meetallcust">from 8 years</h1>
+                  <p class="firstbody">Where to grow your business as a photographer: site or social media?</p>
+                  <button type="button" class="btn btn-primary btncolor px-4 py-2 mt-3">Register</button>
+                </div>
+                <div class="col-sm-12 col-md-6 p-5 ">
+                  <img src="images/banner-img1.svg" alt="bannerimg" class="carouselimg">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row mt-5">
+                <div class="col-sm-12 col-md-6 p-5 datapart">
+                  <h1 class="fw-bold">Lessons and insights</h1>
+                  <h1 class="meetallcust">from 8 years</h1>
+                  <p class="firstbody">Where to grow your business as a photographer: site or social media?</p>
+                  <button type="button" class="btn btn-primary btncolor px-4 py-2 mt-3">Register</button>
+                </div>
+                <div class="col-sm-12 col-md-6 p-5 ">
+                  <img src="images/banner-img1.svg" alt="bannerimg" class="carouselimg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  <!-- SignUp-Popup -->
+    <section>
+      <form class="popup">
+        <div class="popup-content p-5">
+          <h3 class="text-center">Sign UP Form</h3>
+          <div class="userform">
+            <input type="text" class="form-control input" placeholder="Enter Username">
+            <input type="password" class="form-control input" placeholder="Enter password">
+            <button type="submit" class="btn btncolor ">Sign Up</button>
+            <button type="submit" class="btn btncolor close">Close</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  
+  
+  <!-- Clients-Section -->
+    <section class="p-4">
+      <h2 class="text-center secondhead">Our Clients</h2>
+      <p class="lead text-center secondbody mb-2">
+        We have been working with some Fortune 500+ clients
+      </p>
+      <div class="container mt-4">
+        <div class="row text-center">
+          <div class="col-sm p-2"><img src="images/client-logo1.png" alt="client1"></div>
+          <div class="col-sm p-2"><img src="images/client-logo2.png" alt="client2"></div>
+          <div class="col-sm p-2"><img src="images/client-logo3.png" alt="client3"></div>
+          <div class="col-sm p-2"><img src="images/client-logo4.png" alt="client4"></div>
+          <div class="col-sm p-2"><img src="images/client-logo5.png" alt="client5"></div>
+          <div class="col-sm p-2"><img src="images/client-logo6.png" alt="client6"></div>
+          <div class="col-sm p-2"><img src="images/client-logo7.png" alt="client7"></div>
+        </div>
+      </div>
+      <h2 class="text-center thirdhead1 mt-5">Manage your entire community</h2>
+      <h2 class="text-center thirdhead2 ">in a single system</h2>
+      <p class="lead text-center thirdbody mt-3">Who is Nexcent suitable for?</p>
+      <div class="container mt-4 text-center">
+        <div class="row text-center g-4 ">
+          <div class="col-md">
+            <div class="shadow card eachcard">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <img src="images/Membership Organisations.svg" alt="Membership">
+                </div>
+                <h3 class="card-title mb-3 fw-bold">
+                  Membership <br>Organisations
+                </h3>
+                <p class="card-text">
+                  Our membership management software provides full automation of membership renewals and payments
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="shadow card eachcard">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <img src="images/National Associations.svg" alt="Associations">
+                </div>
+                <h3 class="card-title mb-3 fw-bold">
+                  National <br> Associations
+                </h3>
+                <p class="card-text">
+                  Our membership management software provides full automation of membership renewals and payments
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="shadow card eachcard">
+              <div class="card-body text-center ">
+                <div class="h1 mb-3">
+                  <img src="images/Clubs And Groups.svg" alt="Clubs">
+                </div>
+                <h3 class="card-title mb-3 fw-bold">
+                  Clubs And <br>Groups
+                </h3>
+                <p class="card-text">
+                  Our membership management software provides full automation of membership renewals and payments
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  <!-- Pixelgrade-Section -->
+    <section class="p-2">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="images/spending-info.svg" alt="spending-info" class="img-fluid spendingimg">
+          </div>
+          <div class="col-md p-5">
+            <h2 class="learnhead">The unseen of spending three</h2>
+            <h2 class="mb-4 learnhead">years at Pixelgrade</h2>
+            <p class="learntxt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum.Sed accumsan quam vitae
+              est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique icaulis.
+              Nullam pulivar sit amet risus pretium auctor. Etiam quis massa pulvinar, alliquam quam vitae,tempus sem.
+              Donec elementum pulivar odio.
+            </p>
+            <a href="#" class="btn btn-light mt-3 px-3 py-2 learnbtn">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Local-Business-Section -->
+    <section class="infoplace">
+      <div class="container">
+        <div class="row p-5">
+          <div class="col-sm-6 ">
+            <h2 class="learnhead">Helping a local</h2>
+            <h2 class="learnstyle">business reinvent itself </h2>
+            <p class="secondbody">We reached here with our hard work and dedication</p>
+          </div>
+          <div class="col-sm-6">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 p-2">
+                  <table>
+                    <tr>
+                      <td rowspan="2">
+                        <img src="images/members.svg" alt="members">
+                      </td>
+                      <td class="infotag px-3">2,245,341</td>
+                    <tr>
+                      <td class="infobody px-3">Members</td>
+                    </tr>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-6 p-2">
+                  <table>
+                    <tr>
+                      <td rowspan="2">
+                        <img src="images/Clubs.svg" alt="clubs">
+                      </td>
+                      <td class="infotag px-3">46,328</td>
+                    <tr>
+                      <td class="infobody px-3">Clubs</td>
+                    </tr>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 p-2">
+                  <table>
+                    <tr>
+                      <td rowspan="2">
+                        <img src="images/Event Bookings.svg" alt="bookings">
+                      </td>
+                      <td class="infotag px-3">828,867</td>
+                    <tr>
+                      <td class="infobody px-3">Event Bookings</td>
+                    </tr>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-6 p-2">
+                  <table>
+                    <tr>
+                      <td rowspan="2">
+                        <img src="images/payment.svg" alt="payments">
+                      </td>
+                      <td class="infotag px-3">1,926,436</td>
+                    <tr>
+                      <td class="infobody px-3">Payments</td>
+                    </tr>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  
+    <!-- Design-Section -->
+    <section>
+      <div class="container p-4">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="images/pana.png" alt="spending-info" class="img-fluid payimg">
+          </div>
+          <div class="col-md p-5">
+            <h2 class="learnhead">How to design your site footer like we did</h2>
+            <p class="learntxt">
+              Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc
+              varius arcu, at scelerisque elt erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse
+              platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi
+              ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa.
+              Praesent fells est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur facucibus ipsum id
+              gravida.
+            </p>
+            <a href="#" class="btn btn-light mt-3 px-3 py-2 learnbtn">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Customer-Section -->
+    <section class="custsection">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="images/image 9.jpg" alt="img" class="p-5 boximg">
+          </div>
+          <div class="col-md p-4">
+            <p class="custtxt">
+              Maecensus dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt
+              ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in,gravida enim. Nullam ut
+              molestie arcu, at hendrerit elt. Morbi laoreet elt at ligula molestie, nea molestie mi blandit. Sispendisse
+              curcus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum
+              pretium. Suspendisse potenti. Quisuq malesuada enim sapien, vitae placerat ante feugiat eget. Quisque
+              vulputate odio neque , eget efficitur libero condimentum id. Curabitut id nibh id sem dignissim finibus ac
+              sit amet magna.
+            </p>
+            <p class="custname">Tim Smith</p>
+            <p class="custdesignation">British Dragon Boat Racing Association</p>
+            <div class="row text-center gap-2">
+              <div class="col-sm-1 ps-4">
+                <img src="images/client-logo1.png" class="eachclient">
+              </div>
+              <div class="col-sm-1 ps-4">
+                <img src="images/client-logo2.png" class="eachclient">
+              </div>
+              <div class="col-sm-1  ps-4">
+                <img src="images/client-logo3.png" class="eachclient">
+              </div>
+              <div class="col-sm-1  ps-4">
+                <img src="images/client-logo4.png" class="eachclient">
+              </div>
+              <div class="col-sm-1  ps-4">
+                <img src="images/client-logo5.png" class="eachclient">
+              </div>
+              <div class="col-sm-1  ps-4">
+                <img src="images/client-logo6.png" class="eachclient">
+              </div>
+              <div class="col">
+                <a href="#" class="fw-bold meetall">Meet all customers<span class="meetallcust">&#8594;</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Community-Section -->
+    <section class="container">
+      <h2 class="text-center secondhead">Caring is the new marketing</h2>
+      <p class="text-center d-flex flex-column secondbody">The Nexcent blog is the place to read about the latest membership
+        insights,<span>trends and more. See who's joining the community, read about how our community</span> are increasing
+        their membership income and lot's more.</p>
+        <div class="container">
+          <div class="row container p-3">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <img src="images/image 18.png" class="w-75">
+              <div class="text-center card shadow-sm card-marketing mx-3 pt-2 pb-2 fw-bold" >
+                <p>Creating Streamlined Safeguarding Process with OneRen</p>
+                <a href="#" class="readmorebtn">Read more &#8594;</a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <img src="images/image 19.png" class="w-75">
+              <div class="text-center card shadow-sm card-marketing mx-3 pt-2 pb-2 fw-bold">
+                <p>What are you safeguarding responsibilities and how can you manage</p>
+                <a href="#" class="readmorebtn">Read more &#8594;</a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <img src="images/image 20.jpg" class="w-75">
+              <div class="text-center card shadow-sm card-marketing mx-3 p-2 fw-bold">
+                <p>Revamping the Membership Model with Triathlon Australia</p>
+                <a href="#" class="readmorebtn">Read more &#8594;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Demo-Section -->
+    <section class="custsection p-3 py-3 text-center">
+      <h2 class="text-center fw-bold">Pellentesque suscipit</h2>
+      <h2 class="text-center fw-bold mb-4">fringilla libero eu.</h2>
+      <button type="button" class="btn btn-primary btncolor text-center px-4 py-3">Get a Demo -></button>
+    </section>
+
+    <!-- Footer-Section -->
+    <footer class="footsection container-fluid p-5">
+      <div class="container">
+        <div class="row text-start">
+          <div class="col-md">
+            <img src="images/logo1.png" alt="logo1">
+            <p class="ms-2  footext">Copyright &#169 2020 Nexcent ltd. <br> All rights reserved </p>
+            <i class="bi bi-instagram p-1 rounded-circle me-3 iconprop"></i>
+            <i class="bi bi-dribbble p-1 rounded-circle me-3 iconprop"></i>
+            <i class="bi bi-twitter p-1 rounded-circle me-3 iconprop"></i>
+            <i class="bi bi-youtube p-1 rounded-circle me-3 iconprop"></i>
+          </div>
+          <div class="col-md p-2">
+            <h4 class="ms-2 mt-2 text-light">Company</h4>
+            <div class="col-md footext">
+              <ul class="p-2 text-start">
+                <li class="ms-0 p-1 footlist">
+                  <a href="#" class="footext">About Us</a>
+                </li>
+                <li class="ms-0 p-1 footlist">
+                  <a href="#" class="footext">Blog</a>
+                </li>
+                <li class="ms-0 p-1 footlist">
+                  <a href="#" class="footext">Contact Us</a>
+                </li>
+                <li class="ms-0 p-1 footlist">
+                  <a href="#" class="footext">Pricing</a>
+                </li>
+                <li class="ms-0 p-1 footlist">
+                  <a href="#" class="footext">Testimonials</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md p-2">
+            <h4 class="ms-2 mt-2 text-light">Support</h4>
+            <div class="col-md footext">
+              <ul class="p-2">
+                <li class="ms-0 p-1 footlist" >
+                  <a href="#" class="footext">Help center</a>
+                </li>
+                <li class="ms-0 p-1 footlist" >
+                  <a href="#" class="footext">Terms of service</a>
+                </li>
+                <li class="ms-0 p-1 footlist">
+                  <a href="#" class="footext">Legal</a>
+                </li>
+                <li class="ms-0 p-1 footlist">
+                  <a href="#" class="footext">Privacy Policy</a>
+                </li>
+                <li class="ms-0 p-1 footlist">
+                  <a href="#" class="footext">Status</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md p-2">
+            <h4 class="ms-2 mt-2 text-light">Stay up to date</h4>
+            <div class="col-md footext">
+              <ul class="p-2">
+                <li class="ms-0 p-1 footlist">
+                  <div class="input-group news-input">
+                    <input type="text" class="form-control" placeholder="Your email address">
+                    <button class="btn btn-lg" type="button" id="basic-addon2">
+                      <img src="images/send.svg" alt="send" class="m-1">
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<script>
+  
+// color Nav Buttons
+var home = document.getElementById('home');
+home.style.color = "#3684f9";
+var services=document.getElementById('services');
+services.style.color="#56ef46";
+var features=document.getElementById('features');
+features.style.color="#f8b147";
+var product=document.getElementById('product');
+product.style.color="#7be6ad";
+var testimonial=document.getElementById('testimonial');
+testimonial.style.color="#f14358";
+var faq=document.getElementById('faq');
+faq.style.color="#5859fe";
+
+//Features-DropDown
+var dropdownBtn = document.querySelector("#features");
+var dropdown = document.querySelector(".feature-items");
+var downarrow = document.querySelector(".down-arrow");
+var arrow = document.getElementById("arrow-rotate");
+arrow.addEventListener("click",function(){
+    dropdown.classList.toggle('show');
+    arrow.classList.toggle("arrow-rotate");
+})
+
+//SignUp-Popup
+function popupsignup(){
+    var signup = document.getElementById("signup");
+signup.addEventListener("click",function(){
+    document.querySelector(".popup").style.display = "flex";
+})
+document.querySelector(".close").addEventListener("click",function(){
+    document.querySelector(".popup").style.display = "none";
+})
+}
+
+
+</script>
+</html>
